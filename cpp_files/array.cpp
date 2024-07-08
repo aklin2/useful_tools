@@ -7,3 +7,11 @@ void printArray(ItemType arr[], int length){
     }
     std::cout << arr[length - 1] << "]" << std::endl;
 }
+
+template <class ItemType>
+bool isInArray(ItemType item, const ItemType* array, int size){
+    for (int i = 0; i < size; i++){
+        if (i == array[i]) return true;
+    }
+    return false;
+}
